@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!--自定义的标题栏-->
+    <com.example.day4.weight.MyXHView
+        android:id="@+id/header_View"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="搜索历史"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/delete_btn"
+            android:src="@drawable/a" />
+    </RelativeLayout>
+
+    <com.example.day4.weight.MyFloatLayout
+        android:id="@+id/MyFloat_Layout_History"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:textColor="@color/colorPrimaryDark" ></com.example.day4.weight.MyFloatLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:text="热门搜索" />
+
+    <com.example.day4.weight.MyFloatLayout
+        android:id="@+id/MyFloat_Layout"
+        android:layout_width="match_parent"
+        app:textColor="@color/colorPrimaryDark"
+        android:layout_height="wrap_content"></com.example.day4.weight.MyFloatLayout>
+</LinearLayout>
